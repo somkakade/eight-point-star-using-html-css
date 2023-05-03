@@ -1,0 +1,33 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #afd3e2;
+}
+.eight__star {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  transform: rotate(62deg);
+  -webkit-transform: rotate(62deg);
+  -moz-transform: rotate(62deg);
+  -ms-transform: rotate(62deg);
+  -o-transform: rotate(62deg);
+  position: relative;
+}
+.eight__star::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  left: 0;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
